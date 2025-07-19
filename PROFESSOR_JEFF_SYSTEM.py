@@ -371,6 +371,50 @@ class ProfessorJeff:
                 print(f"   ✅ {achievement}")
             print("")
     
+    def gmail_analysis_lesson(self):
+        """Start Gmail analysis lesson with advanced forensic system"""
+        print("📧 GMAIL ANALYSIS LESSON")
+        print("=" * 30)
+        print("🎓 Loading Professor Jeff's Advanced Forensic Analysis...")
+        
+        # Launch Jeff's advanced forensic system
+        import subprocess
+        import sys
+        
+        script_dir = os.path.dirname(__file__)
+        forensic_script = os.path.join(script_dir, "PROFESSOR_JEFF_ADVANCED_FORENSIC_SYSTEM.py")
+        
+        if os.path.exists(forensic_script):
+            print("🔬 Launching Advanced Forensic Masterclass...")
+            subprocess.run([sys.executable, forensic_script])
+        else:
+            print("📚 Advanced forensic system not found - using basic lesson")
+            self.basic_gmail_lesson()
+    
+    def basic_gmail_lesson(self):
+        """Basic Gmail lesson if advanced system not available"""
+        print("📧 Basic Gmail Evidence Analysis:")
+        print("1. Metadata extraction from email headers")
+        print("2. Timeline analysis and correlation") 
+        print("3. Authentication verification")
+        print("4. Content analysis for legal patterns")
+        print("")
+        print("💡 For advanced forensic analysis, use the complete system!")
+    
+    def analyze_case(self):
+        """Analyze the specific case with Professor Jeff's insights"""
+        print("⚖️ CASE ANALYSIS - RT252398")
+        print("=" * 30)
+        print("📧 Gmail Evidence Focus: ck.chawakorn@gmail.com")
+        print("")
+        print("🎓 Professor Jeff's Case Analysis Framework:")
+        print("1. Evidence timeline reconstruction")
+        print("2. Behavioral pattern analysis")
+        print("3. Legal compliance verification")
+        print("4. Strategic intelligence synthesis")
+        print("")
+        print("💡 Use 'gmail' command for detailed forensic analysis")
+    
     def save_conversation(self, user_input, jeff_response):
         """Save conversation to persistent memory"""
         topic = self.identify_topic(user_input)

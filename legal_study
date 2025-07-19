@@ -88,6 +88,11 @@ case "$1" in
         echo "🎓 Persistent teaching with Gmail case analysis"
         python3 "$SCRIPT_DIR/PROFESSOR_JEFF_SYSTEM.py"
         ;;
+    "jeff-forensic")
+        echo "🔬 Professor Jeff's Advanced Forensic Masterclass"
+        echo "🎓 Beyond guidelines - Advanced evidence analysis"
+        python3 "$SCRIPT_DIR/PROFESSOR_JEFF_ADVANCED_FORENSIC_SYSTEM.py" "$2"
+        ;;
     *)
         echo "🎓 Australian Legal Study System"
         echo "================================"
@@ -95,6 +100,7 @@ case "$1" in
         echo ""
         echo "👨‍🏫 PROFESSOR JEFF:"
         echo "  jeff         - Start Professor Jeff legal mentoring session"
+        echo "  jeff-forensic - Advanced forensic masterclass (beyond guidelines)"
         echo ""
         echo "🧩 MASTER INTELLIGENCE COMMANDS:"
         echo "  intelligence - Complete master intelligence analysis"
@@ -119,6 +125,7 @@ case "$1" in
         echo ""
         echo "👨‍🏫 PROFESSOR JEFF EXAMPLES:"
         echo "  ./legal_study jeff          # Start Professor Jeff mentoring"
+        echo "  ./legal_study jeff-forensic # Advanced forensic masterclass"
         echo "  jeff                        # Direct access to Professor Jeff"
         echo ""
         echo "🎯 COMPLETE INTELLIGENCE EXAMPLES:"
