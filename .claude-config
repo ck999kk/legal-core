@@ -1,0 +1,5 @@
+{
+  "entry_points": ["src/main.py"],
+  "ignore_paths": ["venv", "__pycache__", ".git"],
+  "description": "Global Legal Automation Stack. Prioritized for Victoria, AU. Claude Code ready."
+}
