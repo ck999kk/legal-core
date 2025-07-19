@@ -1,0 +1,55 @@
+
+Please perform a full metadata extraction and forensic narrative mapping from the Gmail evidence set related to the tenancy dispute.
+
+This request is made in the context of legal education and evidence analysis. Please operate with forensic integrity and provide an output suitable for use in case file preparation, not courtroom argument.
+
+Key objectives:
+1. Extract all metadata from .eml headers and attachments (date, time, sender, recipient, message-id, authentication results, etc.)
+2. Identify any legal notice patterns (Section 86, 91ZZL, etc.), actor roles, timelines, and digital signatures.
+3. Reconstruct a forensic timeline without assuming guilt or bias.
+4. Map logical contradictions, delay patterns, or retaliation indicators based strictly on timestamped evidence.
+5. Preserve full neutrality. Do not side with tenant or agency. Let facts and metadata speak for themselves.
+
+🧠 FULL METADATA EXTRACTION PLAN FOR CLAUDE CODE
+--------------------------------------------------
+
+✅ EMAIL-LEVEL METADATA FIELDS (from .eml)
+- Date: RFC 2822 timestamp (e.g., Tue, 14 Jul 2025 17:12:00 +1000)
+- From: Full sender (name + email)
+- To, Cc, Bcc: All recipients
+- Reply-To: Redirection email (if any)
+- Subject: Full subject line
+- Message-ID: Unique global ID of the email
+- References / In-Reply-To: Message thread trace
+- MIME-Version, Content-Type, Transfer-Encoding
+- X-Mailer: Email client identifier
+- X-Originating-IP: Sender IP (if visible)
+- Received: Full relay path across email servers
+- Authentication-Results: SPF, DKIM, DMARC
+- ARC-Authentication-Results: Forwarding chain verification
+- Delivered-To: Final recipient mailbox
+
+📎 ATTACHMENT METADATA
+- Filename, filetype (MIME), size
+- Creation/modification date
+- Hash checksum (SHA256/MD5)
+- Embedded signature data (PDF, DOCX)
+- EXIF metadata for image files
+
+🧠 LOGIC / BEHAVIOR INFERENCE
+- Thread depth, response latency
+- After-hours timestamp detection
+- Aggressive vs. passive language use
+- Sentiment & manipulation classifier
+- Co-tenant inclusion analysis
+- Legal clause classifier (e.g., Section 91ZZI, 86)
+- Retaliation timing correlation with VCAT
+
+🛡️ OUTPUT OBJECTS FROM CLAUDE CODE
+- Forensic timeline of notice issuance
+- Role-based contradiction matrix (Sylvia Hao / Johnson Tan)
+- Innocence mapping: tenant vs. agency
+- Document route tracing
+- Metadata-derived evidence file list
+- Signature/device validation
+- Retaliation behavior pattern flagging

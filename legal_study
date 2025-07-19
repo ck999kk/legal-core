@@ -1,0 +1,129 @@
+#!/bin/bash
+# Australian Legal Study Command Interface
+# Quick access to law firm study tools
+# MANDATORY: Government verification for all legal content
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+BACKEND_DIR="$SCRIPT_DIR/backend"
+FRONTEND_DIR="$SCRIPT_DIR/frontend"
+
+# Auto-verification function
+auto_verify_legal_content() {
+    echo "🔍 Auto-verifying legal content with government APIs..."
+    python3 "$BACKEND_DIR/GOVERNMENT_API_INTEGRATOR.py" verify "$1"
+}
+
+case "$1" in
+    "analyze")
+        echo "🏛️  Australian Legal Case Analyzer (Government Verified)"
+        echo "🔒 Victoria Law School Academic Integrity Protocol"
+        auto_verify_legal_content "$2"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" analyze "$2"
+        ;;
+    "research")
+        echo "📚 Legal Research Mode"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" research "$2"
+        ;;
+    "criminal")
+        echo "⚖️  Criminal Law Analysis"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" criminal "$2"
+        ;;
+    "civil")
+        echo "📄 Civil Law Analysis"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" civil "$2"
+        ;;
+    "admin")
+        echo "🏢 Administrative Law Analysis"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" admin "$2"
+        ;;
+    "workflow")
+        echo "📁 Law Firm Workflow Tools"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" workflow "$2"
+        ;;
+    "ethics")
+        echo "✅ Ethical Compliance Check"
+        python3 "$BACKEND_DIR/LAW_FIRM_STUDY_TOOLS.py" ethics "$2"
+        ;;
+    "framework")
+        echo "📖 Opening Legal Study Framework"
+        open "$FRONTEND_DIR/AUSTRALIAN_LEGAL_STUDY_FRAMEWORK.md"
+        ;;
+    "gmail")
+        echo "📧 Complete Gmail Analysis (ck.chawakorn@gmail.com)"
+        echo "🎯 100% Evidence Collection | Zero Human Error"
+        python3 "$BACKEND_DIR/GMAIL_COMPLETE_EXTRACTION_SYSTEM.py" "$2"
+        ;;
+    "export")
+        echo "📥 Gmail Export Automation"
+        echo "🔒 Ensuring 100% Data Capture"
+        python3 "$BACKEND_DIR/GMAIL_EXPORT_AUTOMATION.py"
+        ;;
+    "intelligence")
+        echo "🧩 Master Intelligence Analysis"
+        echo "🎯 Complete understanding of complex human legal situation"
+        python3 "$BACKEND_DIR/MASTER_INTELLIGENCE_SYSTEM.py"
+        ;;
+    "narrative")
+        echo "📚 Narrative Intelligence System"
+        echo "🎯 Complete story reconstruction and psychological analysis"
+        python3 "$BACKEND_DIR/NARRATIVE_INTELLIGENCE_SYSTEM.py"
+        ;;
+    "monitor")
+        echo "📡 Real-time Monitoring System"
+        echo "🎯 Continuous case development monitoring"
+        python3 "$BACKEND_DIR/REALTIME_MONITORING_SYSTEM.py"
+        ;;
+    "verify")
+        echo "🏛️  Government Verification System"
+        echo "🎯 Verify legal information with official sources"
+        python3 "$BACKEND_DIR/GOVERNMENT_API_INTEGRATOR.py" "$2"
+        ;;
+    "forensic")
+        echo "🔬 Forensic Metadata Extractor"
+        echo "🎯 Complete metadata extraction for legal evidence"
+        python3 "$BACKEND_DIR/FORENSIC_METADATA_EXTRACTOR.py" "$2"
+        ;;
+    *)
+        echo "🎓 Australian Legal Study System"
+        echo "================================"
+        echo "Usage: ./legal_study [command] [options]"
+        echo ""
+        echo "🧩 MASTER INTELLIGENCE COMMANDS:"
+        echo "  intelligence - Complete master intelligence analysis"
+        echo "  narrative    - Narrative reconstruction & psychological analysis"
+        echo "  monitor      - Real-time case development monitoring"
+        echo "  verify       - Government source verification"
+        echo "  forensic     - Forensic metadata extraction from email evidence"
+        echo ""
+        echo "🔥 CORE EVIDENCE COMMANDS:"
+        echo "  gmail      - Complete Gmail analysis (ck.chawakorn@gmail.com)"
+        echo "  export     - Gmail export automation (100% data capture)"
+        echo "  analyze    - Comprehensive case analysis"
+        echo "  research   - Legal research automation"
+        echo ""
+        echo "📚 SPECIALIZED ANALYSIS:"
+        echo "  criminal   - Criminal law case analysis"
+        echo "  civil      - Civil law case analysis"
+        echo "  admin      - Administrative law analysis"
+        echo "  workflow   - Law firm workflow tools"
+        echo "  ethics     - Ethical compliance checking"
+        echo "  framework  - Open study framework guide"
+        echo ""
+        echo "🎯 COMPLETE INTELLIGENCE EXAMPLES:"
+        echo "  ./legal_study intelligence  # Master intelligence analysis"
+        echo "  ./legal_study narrative     # Story reconstruction analysis"
+        echo "  ./legal_study monitor       # Start real-time monitoring"
+        echo "  ./legal_study verify text   # Verify legal information"
+        echo "  ./legal_study forensic emails/  # Extract metadata from emails"
+        echo ""
+        echo "📧 GMAIL ANALYSIS EXAMPLES:"
+        echo "  ./legal_study export        # Start Gmail export process"
+        echo "  ./legal_study gmail         # Analyze exported Gmail data"
+        echo ""
+        echo "📋 LEGAL ANALYSIS EXAMPLES:"
+        echo "  ./legal_study analyze case_file.pdf"
+        echo "  ./legal_study research 'criminal negligence'"
+        echo "  ./legal_study criminal R_v_Smith.txt"
+        echo "  ./legal_study framework"
+        ;;
+esac
