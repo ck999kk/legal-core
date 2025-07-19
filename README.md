@@ -19,3 +19,10 @@ This is an AI-ready, Claude-compatible FastAPI backend that allows document clas
 ## 📚 Modules Overview
 
 See [docs/MODULE_OVERVIEW.md](docs/MODULE_OVERVIEW.md) for full module/function breakdown.
+
+---
+
+## 🧠 Psychology Layer (Dark-Triad + Behavior Analysis)
+
+Includes Machiavellian language detection, motive mapping, and persona classification.  
+Useful in interpreting intent, deception, and power-play patterns in legal language.

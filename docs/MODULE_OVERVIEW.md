@@ -62,3 +62,13 @@
 | `API_REFERENCE.md` | API usage & structure documentation |
 | `LEGAL_DOMAINS.md` | Jurisdiction & domain mapping for current modules |
 | `ROADMAP.md` | Legal-core version roadmap & expansion plan |
+
+---
+
+## 🧠 7. Psychological/Machiavellian Analysis
+
+| Module | Description |
+|--------|-------------|
+| `machiavellian_analyzer.py` | Detects manipulative patterns in language using dark triad traits |
+| `motive_detector.py` | Attempts to infer likely motives from contract or statement structure |
+| `persona_mapper.py` | Maps tone/language to psychological profile (assertive, avoidant, dominant) |
