@@ -1,0 +1,13 @@
+=== FORENSIC PROFILE ===
+Document: {{source}}
+Date: {{date}}
+
+Machiavellian Index: {{index}}
+Risk Score: {{score}}
+
+Flags:
+{{flags}}
+
+---
+
+Recommended Action: {{action}}

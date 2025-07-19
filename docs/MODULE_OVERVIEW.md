@@ -72,3 +72,13 @@
 | `machiavellian_analyzer.py` | Detects manipulative patterns in language using dark triad traits |
 | `motive_detector.py` | Attempts to infer likely motives from contract or statement structure |
 | `persona_mapper.py` | Maps tone/language to psychological profile (assertive, avoidant, dominant) |
+
+---
+
+## 🔬 8. Forensic & Risk Intelligence
+
+| Module | Description |
+|--------|-------------|
+| `risk_profiler.py` | Creates a risk profile of a document using deception & manipulation traits |
+| `report_generator.py` | Generates full forensic reports from documents |
+| `forensic_template.txt` | Base template for Markdown or Claude rendering |
