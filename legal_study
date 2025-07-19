@@ -83,10 +83,18 @@ case "$1" in
         echo "🎯 Complete metadata extraction for legal evidence"
         python3 "$BACKEND_DIR/FORENSIC_METADATA_EXTRACTOR.py" "$2"
         ;;
+    "jeff")
+        echo "👨‍🏫 Professor Jeff - Legal Practice Mentor"
+        echo "🎓 Persistent teaching with Gmail case analysis"
+        python3 "$SCRIPT_DIR/PROFESSOR_JEFF_SYSTEM.py"
+        ;;
     *)
         echo "🎓 Australian Legal Study System"
         echo "================================"
         echo "Usage: ./legal_study [command] [options]"
+        echo ""
+        echo "👨‍🏫 PROFESSOR JEFF:"
+        echo "  jeff         - Start Professor Jeff legal mentoring session"
         echo ""
         echo "🧩 MASTER INTELLIGENCE COMMANDS:"
         echo "  intelligence - Complete master intelligence analysis"
@@ -108,6 +116,10 @@ case "$1" in
         echo "  workflow   - Law firm workflow tools"
         echo "  ethics     - Ethical compliance checking"
         echo "  framework  - Open study framework guide"
+        echo ""
+        echo "👨‍🏫 PROFESSOR JEFF EXAMPLES:"
+        echo "  ./legal_study jeff          # Start Professor Jeff mentoring"
+        echo "  jeff                        # Direct access to Professor Jeff"
         echo ""
         echo "🎯 COMPLETE INTELLIGENCE EXAMPLES:"
         echo "  ./legal_study intelligence  # Master intelligence analysis"

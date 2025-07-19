@@ -1,0 +1,21 @@
+#!/bin/bash
+# Professor Jeff - Your Personal Legal Mentor
+# Persistent AI professor for law firm practice with Gmail case analysis
+# Maintains conversation context across all terminal sessions
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+
+# Check if Professor Jeff system exists
+if [ ! -f "$SCRIPT_DIR/PROFESSOR_JEFF_SYSTEM.py" ]; then
+    echo "❌ Professor Jeff system not found!"
+    echo "Please ensure PROFESSOR_JEFF_SYSTEM.py is in the same directory."
+    exit 1
+fi
+
+# Welcome message
+echo "👨‍🏫 Starting Professor Jeff Session..."
+echo "🎓 Your Persistent Legal Practice Mentor"
+echo ""
+
+# Launch Professor Jeff
+python3 "$SCRIPT_DIR/PROFESSOR_JEFF_SYSTEM.py"
